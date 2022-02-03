@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #0d192b;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  background: #14253d;
+  padding: 1.5rem;
+  margin: 5rem 2rem;
+  border-radius: 1rem;
+}
+
+.container .nft-picture {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  position: absolute;
+  cursor: pointer;
+  position: relative;
+}
+
+.container .nft-picture .nft-image {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+.container .nft-picture .view-icon {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 255, 247, 0.5);
+  z-index: 1;
+  position: absolute;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .nft-picture:hover .view-icon {
+  opacity: 1;
+}
+
+.container h1 {
+  color: white;
+  cursor: pointer;
+}
+
+.container h1:hover {
+  color: #00fff7;
+}
+
+.container p {
+  color: #8bacda;
+}
+
+.container .nft-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .nft-info .eth-info,
+.container .nft-info .duration-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .nft-info .eth-info img,
+.container .nft-info .duration-info img {
+  height: 100%;
+  margin-right: 0.5rem;
+}
+
+.container .nft-info .eth-info .eth-price,
+.container .nft-info .duration-info .eth-price {
+  color: #00fff7;
+  font-weight: 500;
+}
+
+.container .nft-info .eth-info .clock-icon,
+.container .nft-info .duration-info .clock-icon {
+  color: #8bacda;
+}
+
+.container hr {
+  background: #2f415b;
+  border: 1px solid #2f415b;
+}
+
+.container .owner {
+  height: 2.5rem;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.container .owner img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid white;
+  border-radius: 100%;
+  margin-right: 1rem;
+}
+
+.container .owner span {
+  color: white;
+}
+
+.container .owner span:hover {
+  color: #00fff7;
+}
+
+.container .owner p {
+  font-weight: 200;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    width: 20rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
